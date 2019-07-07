@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="1021.0" style="-fx-background-color: #EEEEEE;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="lms.ScreenController">
+   <children>
+      <AnchorPane fx:id="issueBook" layoutX="378.0" layoutY="160.0" prefHeight="405.0" prefWidth="613.0" style="-fx-border-color: #3366ff; -fx-background-color: #fff;" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="378.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="160.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" layoutX="20.0" layoutY="136.0" prefHeight="245.0" prefWidth="578.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="135.0" />
+            <AnchorPane layoutX="2.0" layoutY="3.0" prefHeight="62.0" prefWidth="611.0" style="-fx-background-color: #C5EFF7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="19.0" layoutY="11.0" text="Issue Books" textFill="#3a539b">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="532.0" layoutY="6.0" onAction="#viewBtnPushed" prefHeight="53.0" prefWidth="62.0" styleClass="infoBtn" stylesheets="@style.css" text="View" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="6.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="nameLabel1" layoutX="18.0" layoutY="80.0" prefHeight="27.0" prefWidth="95.0" text="Book Code">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bookCodeTextField" layoutX="121.0" layoutY="82.0" onAction="#bookCodeTextFieldAction">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="issuedBooks" layoutX="378.0" layoutY="160.0" prefHeight="405.0" prefWidth="613.0" style="-fx-border-color: #3366ff; -fx-background-color: #fff;">
+         <children>
+            <ScrollPane fx:id="scrollPane1" layoutX="21.0" layoutY="82.0" prefHeight="298.0" prefWidth="576.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="81.0" />
+            <AnchorPane layoutX="2.0" layoutY="3.0" prefHeight="62.0" prefWidth="611.0" style="-fx-background-color: #C5EFF7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="19.0" layoutY="11.0" text="Issued Books" textFill="#3a539b">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="issueBookBtn" layoutX="521.0" layoutY="2.0" onAction="#issueBookBtnPushed" prefHeight="54.0" prefWidth="80.0" style="-fx-background-color: #5588ff;" text="Issue Books" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0" />
+                  <JFXButton layoutX="426.0" layoutY="3.0" onAction="#bookAddBtnPushed" prefHeight="54.0" prefWidth="80.0" style="-fx-background-color: #99ccff;" text="Add Book" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="3.0" />
+                  <JFXButton layoutX="334.0" layoutY="3.0" onAction="#bookEditBtnPushed" prefHeight="54.0" prefWidth="80.0" style="-fx-background-color: #99ccff;" text="Edit" AnchorPane.rightAnchor="197.0" AnchorPane.topAnchor="3.0" />
+                  <JFXButton layoutX="244.0" layoutY="4.0" onAction="#viewBookBtnPushed" prefHeight="54.0" prefWidth="80.0" style="-fx-background-color: #99ccff;" text="View" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-5.0" layoutY="1.0" prefHeight="97.0" prefWidth="900.0" style="-fx-background-color: #3a539b;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="85.0" fitWidth="90.0" layoutX="823.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="6.0">
+               <image>
+                  <Image url="@usericon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="21.0" text="Library Management System" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="31.0" layoutY="162.0" prefHeight="406.0" prefWidth="308.0" style="-fx-border-color: #3366ff; -fx-background-color: #fff;" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="162.0">
+         <children>
+            <TextField fx:id="searchRollTextField" layoutX="108.0" layoutY="95.0" onAction="#studentCodeAction">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="29.0" layoutY="97.0" text="Roll No.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox layoutX="28.0" layoutY="153.0" prefHeight="195.0" prefWidth="245.0">
+               <children>
+                  <HBox prefHeight="49.0" prefWidth="258.0" spacing="30.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="55.0" text="Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nameLabel" prefHeight="20.0" prefWidth="129.0" text="Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="258.0" spacing="30.0">
+                     <children>
+                        <Label text="Faculty">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="faculyLabel" text="Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="258.0" spacing="20.0">
+                     <children>
+                        <Label text="Contact ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="contactLabel" text="Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="258.0" spacing="20.0">
+                     <children>
+                        <Label text="Address">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="addressLabel" text="Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane layoutX="2.0" layoutY="2.0" prefHeight="62.0" prefWidth="306.0" style="-fx-background-color: #C5EFF7;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+               <children>
+                  <Label layoutX="28.0" layoutY="11.0" text="Student Info" textFill="#3a539b">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton buttonType="RAISED" layoutX="221.0" layoutY="324.0" onAction="#addBtnPushed" prefHeight="54.0" prefWidth="52.0" ripplerFill="#3a539b" styleClass="addBtn" stylesheets="@style.css" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lms.RegistrationController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="55.0" prefHeight="62.0" prefWidth="435.0" style="-fx-background-color: #C5EFF7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="38.0" layoutY="17.0" text="Student Registration" textFill="#3a539b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="105.0" text="Roll No">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="143.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="178.0" text="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="216.0" text="Faculty">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addRolll" layoutX="177.0" layoutY="101.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addName" layoutX="178.0" layoutY="135.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addAddress" layoutX="178.0" layoutY="171.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addFaculty" layoutX="179.0" layoutY="211.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="309.0" layoutY="309.0" onAction="#RegisterBtnPushed" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #C5EFF7;" text="Register" />
+      <Label layoutX="69.0" layoutY="250.0" prefHeight="27.0" prefWidth="73.0" text="Contact">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addContact" layoutX="179.0" layoutY="248.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
